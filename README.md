@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+To do list project created using Ruby on Rails, CSS, JS and HTML.
 
-Things you may want to cover:
+Features to include:
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- CRUD of tasks to be completed
+- Accounts
+- Auto planning of day according to deliverables
+- Storage of previous tasks and their times completed
+- Inclusion of various studying/productivity techniques
