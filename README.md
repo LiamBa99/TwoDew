@@ -1,6 +1,8 @@
 # README
 
 To do list project created using Ruby on Rails, CSS, JS and HTML.
+- Trying Tailwind CSS
+- Trying using React.JS and Node.JS
 
 Features to include:
 

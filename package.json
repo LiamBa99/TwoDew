@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "axios": "^1.2.0",
+    "babel-plugin-js-logger": "^1.0.17",
+    "js-logger": "^1.6.1",
+    "react-router-dom": "5.3.0",
+    "tailwindcss": "1.9.6",
+    "vim": "^0.1.0"
+  }
+}
