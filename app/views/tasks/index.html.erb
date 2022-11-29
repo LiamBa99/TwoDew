@@ -2,8 +2,14 @@
 
 <H2> TwoDew Tasks <H2>
 
+<% if current_user %>
+    <p> Your user ID is <%= current_user.id %> <p>
+    <% current_id = current_user.id %>
+<% end %>
+
 <ul>
 <% @tasks.each do |task| %>
     <li><%= task.title %></li>
 <% end %>
 </ul>
+
