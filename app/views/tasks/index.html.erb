@@ -1,0 +1,9 @@
+<H1> List of tasks will appear here</H1>
+
+<H2> TwoDew Tasks <H2>
+
+<ul>
+<% @tasks.each do |task| %>
+    <li><%= task.title %></li>
+<% end %>
+</ul>
