@@ -9,6 +9,10 @@
 <% end %>
 
 <ul>
+<!-- seperate tasks into a list, showing up to 4? lists on the main bar, and a drop down if more than 4 -->
+<!-- clicking on a list takes you to the list of tasks for that list -->
+<!-- add an "all" button that shows all tasks, regardless of list -->
+
 <% @tasks.each do |task| %>
     <li><%= task.title %></li>
 <% end %>

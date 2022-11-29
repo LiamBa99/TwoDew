@@ -74,3 +74,7 @@ end
 gem "devise", "~> 4.8"
 
 gem "responders"
+
+gem 'react-rails'
+
+gem 'webpacker'
