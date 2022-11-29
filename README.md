@@ -6,6 +6,7 @@ To do list project created using Ruby on Rails, CSS, JS and HTML.
 
 Features to include:
 
+- Add routing to task page
 - Main page HTML/CSS
 - Main Task page
 - Accounts

@@ -4,7 +4,8 @@
 
 <% if current_user %>
     <p> Your user ID is <%= current_user.id %> <p>
-    <% current_id = current_user.id %>
+    <% list_count = @list_array.size %>
+    <p> You have <%= list_count %> list[s] of tasks <p> 
 <% end %>
 
 <ul>
