@@ -1,12 +1,13 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
-  root 'pages#home'
+  root "pages#home"
   devise_for :users
 
   devise_scope :user do
-    get '/users/sign_out' => 'devise/sessions#destroy'
+    get "/users/sign_out" => "devise/sessions#destroy"
   end
-  
-  
+
   get "/list", to: "lists#index"
 
   resources :tasks

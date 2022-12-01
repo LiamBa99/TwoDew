@@ -1,20 +1,61 @@
-<H1> List of tasks will appear here</H1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tasks</title>
+</head>
+<body>
 
-<H2> TwoDew Tasks <H2>
+    <div class="box">
+        <div class="main_header">
+            <div> icon </div>
+            <button class="home_button"> TWO DEW </button>
+        </div>
+        <!-- seperate tasks into a list, showing up to 4? lists on the main bar, and a drop down if more than 4 -->
+        <!-- clicking on a list takes you to the list of tasks for that list -->
+        <!-- add an "all" button that shows all tasks, regardless of list -->
 
-<% if current_user %>
-    <p> Your user ID is <%= current_user.id %> <p>
-    <% list_count = @list_array.size %>
-    <p> You have <%= list_count %> list[s] of tasks <p> 
-<% end %>
+        <div class="task_list_header">
+            <% if current_user %>
+                <% list_count = @lists.size %>
+                <% if list_count == 0 || list_count > 1 %>
+                    <p> You have <%= list_count %> lists of tasks <p>
+                <% else %>
+                    <p> You have <%= list_count %> list of tasks <p> 
+                <% end %>
+            <% end %>
 
-<ul>
-<!-- seperate tasks into a list, showing up to 4? lists on the main bar, and a drop down if more than 4 -->
-<!-- clicking on a list takes you to the list of tasks for that list -->
-<!-- add an "all" button that shows all tasks, regardless of list -->
+            <div class="list_container">
+                <% @lists.each do |list| %>
+                    <button> <%= list.title %> </button>
+                <% end %>
+            </div>
+        </div>
 
-<% @tasks.each do |task| %>
-    <li><%= task.title %></li>
-<% end %>
-</ul>
+        <div class="content_container">
+            <div class="left_side_bar"> 
+                <p> left test </p>
+            </div>
+
+            <div class="task_container">
+                <p> tasks for this list<p>
+            </div>
+
+            <div class="right_side_bar">
+                <p> right test <p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p> footer <p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+
 

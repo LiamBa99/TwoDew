@@ -1,0 +1,51 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+
+.box {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.main_header {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    margin: 0;
+    flex: 0 1 auto;
+}
+
+.task_list_header {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    flex: 0 1 auto;
+}
+
+.content_container {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: left;
+}
+
+.left_side_bar {
+    background-color: grey;
+    width: 128px;
+}
+
+.task_container {
+    background-color: lightgrey;
+    width: 100%
+}
+
+.right_side_bar {
+    background-color: grey;
+    width: 128px;
+}
+
+.footer {
+    height: 64px;
+}

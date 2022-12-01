@@ -1,8 +1,11 @@
 # README
 
 To do list project created using Ruby on Rails, CSS, JS and HTML.
-- Trying Tailwind CSS
-- Trying using React.JS and Node.JS
+
+Using vanilla JS/CSS, in the future may:
+
+- Try Tailwind CSS
+- Try React.JS
 
 Features to include:
 
@@ -15,3 +18,4 @@ Features to include:
 - Auto planning of day according to deliverables
 - Storage of previous tasks and their times completed
 - Inclusion of various studying/productivity techniques
+- Connectivity to Google Calendars
