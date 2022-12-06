@@ -9,12 +9,16 @@ Using vanilla JS/CSS, in the future may:
 
 Features to include:
 
-- Add routing to task page
-- Main page HTML/CSS
+- Add routing to task page ✓
 - Main Task page
+    - Add sorting of "ALL" tasks
+    - Change display of tasks based on button press
+    - Display tasks based on due date
+    - Add headers of the date and time
+- CRUD of tasks to be completed
+- Main page HTML/CSS
 - Accounts
 - Account specific task page
-- CRUD of tasks to be completed
 - Auto planning of day according to deliverables
 - Storage of previous tasks and their times completed
 - Inclusion of various studying/productivity techniques
