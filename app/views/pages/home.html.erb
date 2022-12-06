@@ -17,7 +17,7 @@
     <%= link_to "Logout", destroy_user_session_path, :method => :delete %>
 
     
-    <div> Your Tasks </div>
+    <%= link_to "Your Tasks", tasks_path %>
 <% else %>
     <p> You are not signed in.</p>
     <%= link_to "Sign up!", new_user_registration_path %>

@@ -27,10 +27,16 @@
                 <% end %>
             <% end %>
 
-            <div class="list_container">
-                <% @lists.each do |list| %>
-                    <button> <%= list.title %> </button>
-                <% end %>
+        <!-- only show dropdown if there is more than x amount of lists -->
+        <!-- show an "ALL" button no matter what that shows all tasks regardless of list id -->
+
+            <div class="dropdown">
+                <button class="dropbtn">Your Tasks</button>
+                <div class="dropdown_content">
+                    <% @lists.each do |list| %>
+                        <button> <%= list.title %> </button>
+                    <% end %>
+                </div>
             </div>
         </div>
 
@@ -40,7 +46,9 @@
             </div>
 
             <div class="task_container">
-                <p> tasks for this list<p>
+                <% @lists.each do |list| %>
+                    <ul> <%= list.title %> <ul>
+                <% end %>
             </div>
 
             <div class="right_side_bar">

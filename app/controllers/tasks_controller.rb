@@ -7,7 +7,6 @@ class TasksController < ApplicationController
 
   def index
     @lists = List.where(user_id: current_user.id)
-    @tasks = Task.where(list_id: 1)
-    respond_with(@tasks)
+    
   end
 end
