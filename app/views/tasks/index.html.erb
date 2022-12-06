@@ -45,10 +45,21 @@
                 <p> left test </p>
             </div>
 
+
+        <!-- show tasks in order of due date -->
+    
             <div class="task_container">
-                <% @lists.each do |list| %>
-                    <ul> <%= list.title %> <ul>
-                <% end %>
+                <table>
+                    <% @lists.each do |list| %>
+                        <% task_list = Task.where(list_id: list.id) %>
+                        <% task_list.each do |task| %>
+                            <tr>
+                            <td> <%= task.title %> </td>
+                            <td> <%= task.due_date %> </td>
+                            </tr>
+                        <% end %>
+                    <% end %>
+                </table>
             </div>
 
             <div class="right_side_bar">
