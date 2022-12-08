@@ -7,6 +7,26 @@ class TasksController < ApplicationController
 
   def index
     @lists = List.where(user_id: current_user.id)
-    
   end
+
+  def new
+    @task = Task.new
+  end
+
+
+  def create 
+    @task = Task.new(task_params)
+
+    if @task.save
+      redirect_to :tasks
+    else
+      render :new, status: :unprocessable_entity
+    end
+
+  end
+
+  private
+    def task_params
+      params.require(:task).permit(:title,:list_id,:description,:due_date)
+    end
 end

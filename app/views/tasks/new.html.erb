@@ -1,0 +1,37 @@
+<h1>New Task</h1>
+
+<%= form_with model: @task do |form| %>
+  <div>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+    <% @task.errors.full_messages_for(:title).each do |message| %>
+        <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :list_id %><br>
+    <%= form.text_area :list_id %>
+    <% @task.errors.full_messages_for(:list_id).each do |message| %>
+        <div> <%= message %></div>
+    <% end %>
+  </div>
+
+
+  <div>
+    <%= form.label :description %><br>
+    <%= form.text_area :description %>
+  </div>
+
+  <div>
+    <%= form.label :due_date %><br>
+    <%= form.text_area :due_date %>
+        <% @task.errors.full_messages_for(:due_date).each do |message| %>
+        <div> <%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

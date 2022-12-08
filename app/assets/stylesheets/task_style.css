@@ -89,6 +89,7 @@ body {
 }
 
 .right_side_bar {
+    color: black;
     border-style: dotted;
     border-color: grey;
     width: 128px;
