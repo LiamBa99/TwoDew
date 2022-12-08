@@ -10,12 +10,12 @@ Using vanilla JS/CSS, in the future may:
 Features to include:
 
 - Add routing to task page ✓
+- CRUD of tasks to be completed | CR ✓ | UD X
 - Main Task page
     - Add sorting of "ALL" tasks
     - Change display of tasks based on button press
     - Display tasks based on due date
     - Add headers of the date and time
-- CRUD of tasks to be completed
 - Main page HTML/CSS
 - Accounts
 - Account specific task page
